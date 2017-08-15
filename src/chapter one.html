@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<script src="chapterone.js"></script> <!-- Included javascript file -->
+	</head>
+	<body>
+		<form name="testing">
+			<h1>Welcome</h1>
+			<h3>My first JavaScript testing HTML file.</h3>
+			<br/>
+			Text: <input id="myinput">
+			<input type="submit" value="Click Me" onclick="doClickSubmit()">
+			<br/>
+			Other Stuff: <input id="inputtwo">
+			<input type="button" value="Click Me" onclick="doInlineClickSubmit()">
+		</form>
+	</body>
+<script language="Javascript">
+<!-- Inline javascript -->
+
+function doInlineClickSubmit() {
+	// VALUES
+	var numbr = 12; 	// Integer
+	var value2 = 12.44;	// Decimal
+	var okay = true;	// Boolean
+	var str1 = "Some value";// String
+
+	var str2 = "This is now " + str1; // Concatenation of two strings.
+
+	// LOGICAL OPERATORS
+	console.log("numbr == value2 --> " + (numbr == value2)); 	// false
+	console.log("okay == true --> " +  (okay == true));	// true
+	console.log("str1 == \"Some value\" --> " + (str1 == "Some value")); // true
+	console.log("value2 > numbr --> " + (value2 > numbr)); // true
+
+	// Comparison operators
+	// ==	Equals
+	// >	Greater than
+	// < 	Less than
+	// >= 	Greater than or equal
+	// <= 	Less than or equal
+	// !=	Not equal
+	
+	// Logical operators
+	// &&	and
+	// ||	or
+	// !	not
+
+	if ( value2 > 10 && okay == true && str1 == "Some value" ) {
+		console.log("Yes these are all true!");
+	}
+	else {
+		console.log("What, not true?!?");
+	}
+
+
+	if ( value2 > 10 || okay == true || str1 == "Some value" ) {
+		console.log("Yes one of these are true!");
+	}
+	else {
+		console.log("All are not true!");
+	}
+
+}
+
+</script>
+</html>

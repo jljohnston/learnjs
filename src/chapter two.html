@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script src="chaptertwo.js"></script> <!-- Included javascript file -->
+	</head>
+	<body>
+		<form name="testing">
+			<h1>Welcome</h1>
+			<h3>Chapter Two.</h3>
+			<br/>
+			<br/>
+			Some Buttons:
+			<input type="button" value="Show an alert" onclick="showAlert()">
+			<input type="button" value="Show a confirm" onclick="showConfirm()">
+			<input type="button" value="Show a prompt" onclick="showPrompt()">
+			<input type="button" value="Run a for loop" onclick="runForLoop()">
+			<input type="button" value="Run a while loop" onclick="runWhileLoop()">
+
+			<br/><br/>
+			Enter on of the following values: red, green, blue or yellow: <input type="text" name="mycolor"> <input type="button" value="Run a switch statement" 
+					onclick="runSwitchStatement(document.forms[0].mycolor.value)" >
+
+			<br/><br/>
+			Enter a string to get the length of: <input type="text" name="mystring"> <input type="button" value="Show Length" onclick="showLengthOfString(document.forms[0].mystring.value)");
+		</form>
+	</body>
+</html>
