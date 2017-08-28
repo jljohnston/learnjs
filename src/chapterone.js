@@ -1,5 +1,9 @@
 
 
+function doClickSubmit() {
+	alert("You clicked this!");
+}
+
 function showAlert() {
 	alert("This showed an alert");
 }

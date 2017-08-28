@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<script src="chapterfour_solved.js"></script> <!-- Included javascript file -->
+	</head>
+	<body>
+		<form name="testing">
+			<table border="1" width="50%">
+				<thead>
+					<tr>
+						<th><a href="#" onclick="sortRows(0)">Artist</a></th>
+						<th><a href="#" onclick="sortRows(1)">CD</a></th>
+						<th><a href="#" onclick="sortRows(2)">Cost</a></th>
+					</tr>
+				</thead>
+				<tbody id="tableBody">
+					<tr>
+						<td colspan="3">Nothing in this table yet</td>
+					</tr>
+				</tbody>
+			</table>
+			<br/><br/><br/>
+			Artist: <input type="text" id="artist" size="20">
+			CD: <input type="text" id="cd" size="30">
+			Cost: <input type="text" id="cost" size=""10>
+			<input type="button" value="Add Row" onclick="addRow()">
+		</form>
+	</body>
+</html>

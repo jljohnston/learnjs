@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<script src="chapterthree.js"></script> <!-- Included javascript file -->
+	</head>
+	<body>
+		<form name="testing">
+			<h1>Welcome</h1>
+			<h3>My first JavaScript testing HTML file.</h3>
+			<br/>
+			Enter a number: <input id="myinput" size="4">
+			<input type="button" value="Do Square" onclick="doInlineSquare()">
+			Squared Result: <span id="resultone"></span>
+			<br/><br/><br/>
+			Enter the base number: <input id="base" size="4">
+			Enter the exponent number: <input id="expo" size="4">
+			<input type="button" value="Do Exponent" onclick="doExponent()">
+			Exponent Result: <span id="resulttwo"></span>
+			<br/>
+		</form>
+	</body>
+<script language="Javascript">
+<!-- Inline javascript -->
+// One type of a function: a inline function
+function doInlineSquare() {
+    var num = document.forms[0].myinput.value;
+
+    // TODO: 5. Stretch goal: Check if 'num' is numeric and if not alert the user and get . (Search google to see if you can find this)
+
+    var sq = square(num);
+
+
+    document.getElementById("resultone").innerHTML = sq;
+}
+
+// TODO: 1. Try the square function and look at the code to see how it works.
+// TODO: 2. Open the Chrome Javascript debugger and put a break point on the first line in the 'square' function of the chapterthree.js file
+// TODO: 3. Try the exponenet part of the HTML while your JavaScript debugger is on to see what message is displayed.
+// TODO: 4. Add the doExponent method that calls code within the chapterthree.js to execute an exponent function and fills out the Exponent Result
+
+</script>
+</html>

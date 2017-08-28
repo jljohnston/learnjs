@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script src="chapterfour_b.js"></script> <!-- Included javascript file -->
+	</head>
+	<body>
+		<form name="testing">
+			Enter some Values:
+			<table border="1" width="50%">
+					<tr>
+						<th>Key</th>
+						<td><input type="text" id="mkey"></td>
+					</tr>
+					<tr>
+						<th>Value</th>
+						<td><input type="text" id="mvalue"></td>
+					</tr>
+			</table>
+			<input type="button" value="Add Key Value Pair" onclick="addKeyValuePair()">
+			<br/><br/><br/>
+			Key: <input type="text" id="lookupKey" >
+			<input type="button" value="Lookup Value" onclick="doLookupValue()">
+			Value: <span id="lookupValue"></span>
+		</form>
+	</body>
+</html>
